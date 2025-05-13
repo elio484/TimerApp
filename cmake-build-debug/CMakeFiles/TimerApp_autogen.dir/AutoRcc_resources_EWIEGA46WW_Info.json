@@ -1,0 +1,22 @@
+{
+	"BUILD_DIR" : "/Users/eliamattesini/Desktop/TimerApp/cmake-build-debug/TimerApp_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/eliamattesini/Desktop/TimerApp/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/eliamattesini/Desktop/TimerApp/cmake-build-debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/eliamattesini/Desktop/TimerApp",
+	"CMAKE_SOURCE_DIR" : "/Users/eliamattesini/Desktop/TimerApp",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "/Users/eliamattesini/Desktop/TimerApp/cmake-build-debug/TimerApp_autogen/include",
+	"INPUTS" : [ "/Users/eliamattesini/Desktop/TimerApp/style/style.qss" ],
+	"LOCK_FILE" : "/Users/eliamattesini/Desktop/TimerApp/cmake-build-debug/CMakeFiles/TimerApp_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "/Users/eliamattesini/Qt/6.10.0/macos/libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/Users/eliamattesini/Desktop/TimerApp/cmake-build-debug/CMakeFiles/TimerApp_autogen.dir/AutoRcc_resources_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/Users/eliamattesini/Desktop/TimerApp/resources.qrc",
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

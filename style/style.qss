@@ -1,0 +1,40 @@
+QWidget {
+    background-color: #f0f0f0;
+    font-family: 'Arial';
+    color: black;
+}
+
+QLabel#TimeLabel {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    padding: 20px;
+}
+
+QPushButton {
+    background-color: #4CAF50;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #45a049;
+}
+
+QPushButton:disabled {
+    background-color: #a5d6a7;
+    color: #555;
+}
+
+QSpinBox {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50px;
+    background-color: #fff;
+    color: black;
+}

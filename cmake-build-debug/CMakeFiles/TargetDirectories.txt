@@ -1,0 +1,5 @@
+/Users/eliamattesini/Desktop/TimerApp/cmake-build-debug/CMakeFiles/TimerApp.dir
+/Users/eliamattesini/Desktop/TimerApp/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/eliamattesini/Desktop/TimerApp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/eliamattesini/Desktop/TimerApp/cmake-build-debug/CMakeFiles/TimerApp_autogen_timestamp_deps.dir
+/Users/eliamattesini/Desktop/TimerApp/cmake-build-debug/CMakeFiles/TimerApp_autogen.dir

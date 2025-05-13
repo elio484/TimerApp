@@ -1,0 +1,3 @@
+/Users/eliamattesini/Desktop/TimerApp/build/CMakeFiles/TimerApp.dir
+/Users/eliamattesini/Desktop/TimerApp/build/CMakeFiles/edit_cache.dir
+/Users/eliamattesini/Desktop/TimerApp/build/CMakeFiles/rebuild_cache.dir
