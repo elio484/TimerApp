@@ -1,37 +1,38 @@
-#ifndef TIMERWINDOW_HPP
-#define TIMERWINDOW_HPP
+#ifndef TIMERWINDOW_H
+#define TIMERWINDOW_H
 
-#include <QWidget>
-#include <QPushButton>
-#include <QLabel>
 #include <QTimer>
+#include <QLabel>
+#include <QPushButton>
 #include <QSpinBox>
 
 class TimerWindow : public QWidget {
     Q_OBJECT
 
 public:
-    TimerWindow(QWidget *parent = nullptr);
+    explicit TimerWindow(QWidget *parent = nullptr);
 
-private slots:
-    void updateDisplay();
+public slots:
     void startTimer();
     void stopTimer();
     void resetTimer();
+    void updateDisplay();
 
-private:
+public:
+    void setupUI();
+    QString formatTime(int totalSeconds) const;
+
+    QTimer *timer;
     QLabel *timeLabel;
+    QLabel *unitLabel;
     QSpinBox *hourInput;
     QSpinBox *minuteInput;
     QSpinBox *secondInput;
     QPushButton *startButton;
     QPushButton *stopButton;
     QPushButton *resetButton;
-    QTimer *timer;
-    QLabel *unitLabel;
+
     int remainingSeconds;
-    void setupUI();
-    QString formatTime(int totalSeconds) const;
 };
 
-#endif // TIMERWINDOW_HPP
+#endif // TIMERWINDOW_H

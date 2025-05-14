@@ -1,5 +1,5 @@
-/Users/eliamattesini/Desktop/TimerApp/cmake-build-debug/TimerApp_autogen/6YEA5652QU/moc_TimerWindow.cpp: /Users/eliamattesini/Desktop/TimerApp/include/TimerWindow.h \
-  /Users/eliamattesini/Desktop/TimerApp/cmake-build-debug/TimerApp_autogen/moc_predefs.h \
+/Users/eliamattesini/Desktop/TimerApp\ 21.41.03/cmake-build-debug/TimerApp_autogen/6YEA5652QU/moc_TimerWindow.cpp: /Users/eliamattesini/Desktop/TimerApp\ 21.41.03/include/TimerWindow.h \
+  /Users/eliamattesini/Desktop/TimerApp\ 21.41.03/cmake-build-debug/TimerApp_autogen/moc_predefs.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h \
@@ -1093,7 +1093,6 @@
   /Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QLabel \
   /Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QPushButton \
   /Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QSpinBox \
-  /Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QWidget \
   /Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qabstractbutton.h \
   /Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qabstractspinbox.h \
   /Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qframe.h \

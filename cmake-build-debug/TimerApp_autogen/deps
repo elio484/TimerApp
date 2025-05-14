@@ -972,15 +972,15 @@ TimerApp_autogen/timestamp: \
 	/Users/eliamattesini/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Linker/Apple-AppleClang-CXX.cmake \
 	/Users/eliamattesini/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Linker/Apple-AppleClang.cmake \
 	/Users/eliamattesini/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/UnixPaths.cmake \
-	/Users/eliamattesini/Desktop/TimerApp/CMakeLists.txt \
-	/Users/eliamattesini/Desktop/TimerApp/cmake-build-debug/CMakeFiles/3.31.6/CMakeCCompiler.cmake \
-	/Users/eliamattesini/Desktop/TimerApp/cmake-build-debug/CMakeFiles/3.31.6/CMakeCXXCompiler.cmake \
-	/Users/eliamattesini/Desktop/TimerApp/cmake-build-debug/CMakeFiles/3.31.6/CMakeSystem.cmake \
-	/Users/eliamattesini/Desktop/TimerApp/cmake-build-debug/TimerApp_autogen/moc_predefs.h \
-	/Users/eliamattesini/Desktop/TimerApp/include/TimerWindow.h \
-	/Users/eliamattesini/Desktop/TimerApp/main.cpp \
-	/Users/eliamattesini/Desktop/TimerApp/resources.qrc \
-	/Users/eliamattesini/Desktop/TimerApp/src/TimerWindow.cpp \
+	/Users/eliamattesini/Desktop/TimerApp\ 21.41.03/CMakeLists.txt \
+	/Users/eliamattesini/Desktop/TimerApp\ 21.41.03/cmake-build-debug/CMakeFiles/3.31.6/CMakeCCompiler.cmake \
+	/Users/eliamattesini/Desktop/TimerApp\ 21.41.03/cmake-build-debug/CMakeFiles/3.31.6/CMakeCXXCompiler.cmake \
+	/Users/eliamattesini/Desktop/TimerApp\ 21.41.03/cmake-build-debug/CMakeFiles/3.31.6/CMakeSystem.cmake \
+	/Users/eliamattesini/Desktop/TimerApp\ 21.41.03/cmake-build-debug/TimerApp_autogen/moc_predefs.h \
+	/Users/eliamattesini/Desktop/TimerApp\ 21.41.03/include/TimerWindow.h \
+	/Users/eliamattesini/Desktop/TimerApp\ 21.41.03/main.cpp \
+	/Users/eliamattesini/Desktop/TimerApp\ 21.41.03/resources.qrc \
+	/Users/eliamattesini/Desktop/TimerApp\ 21.41.03/src/TimerWindow.cpp \
 	/Users/eliamattesini/Qt/6.10.0/macos/lib/QtCore.framework/Versions/A/Headers/QTimer \
 	/Users/eliamattesini/Qt/6.10.0/macos/lib/QtCore.framework/Versions/A/Headers/q17memory.h \
 	/Users/eliamattesini/Qt/6.10.0/macos/lib/QtCore.framework/Versions/A/Headers/q20functional.h \
@@ -1147,7 +1147,6 @@ TimerApp_autogen/timestamp: \
 	/Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QLabel \
 	/Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QPushButton \
 	/Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QSpinBox \
-	/Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QWidget \
 	/Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qabstractbutton.h \
 	/Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qabstractspinbox.h \
 	/Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qframe.h \
@@ -1338,6 +1337,22 @@ TimerApp_autogen/timestamp: \
 	/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-relwithdebinfo.cmake \
 	/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake \
 	/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake \
+	/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6Test/Qt6TestAdditionalTargetInfo.cmake \
+	/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6Test/Qt6TestConfig.cmake \
+	/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6Test/Qt6TestConfigVersion.cmake \
+	/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6Test/Qt6TestConfigVersionImpl.cmake \
+	/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6Test/Qt6TestDependencies.cmake \
+	/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6Test/Qt6TestTargets-relwithdebinfo.cmake \
+	/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6Test/Qt6TestTargets.cmake \
+	/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6Test/Qt6TestVersionlessAliasTargets.cmake \
+	/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6Test/QtTestProperties.cmake \
+	/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6TestPrivate/Qt6TestPrivateAdditionalTargetInfo.cmake \
+	/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6TestPrivate/Qt6TestPrivateConfig.cmake \
+	/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6TestPrivate/Qt6TestPrivateConfigVersion.cmake \
+	/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6TestPrivate/Qt6TestPrivateConfigVersionImpl.cmake \
+	/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6TestPrivate/Qt6TestPrivateDependencies.cmake \
+	/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6TestPrivate/Qt6TestPrivateTargets.cmake \
+	/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6TestPrivate/Qt6TestPrivateVersionlessAliasTargets.cmake \
 	/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginAdditionalTargetInfo.cmake \
 	/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginConfig.cmake \
 	/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets-relwithdebinfo.cmake \

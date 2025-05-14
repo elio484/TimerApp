@@ -1,17 +1,17 @@
 {
-	"BUILD_DIR" : "/Users/eliamattesini/Desktop/TimerApp/cmake-build-debug/TimerApp_autogen",
-	"CMAKE_BINARY_DIR" : "/Users/eliamattesini/Desktop/TimerApp/cmake-build-debug",
-	"CMAKE_CURRENT_BINARY_DIR" : "/Users/eliamattesini/Desktop/TimerApp/cmake-build-debug",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/eliamattesini/Desktop/TimerApp",
+	"BUILD_DIR" : "/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/TimerApp_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/eliamattesini/Desktop/TimerApp 21.41.03",
 	"CMAKE_EXECUTABLE" : "/Users/eliamattesini/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/Users/eliamattesini/Desktop/TimerApp/CMakeLists.txt",
-		"/Users/eliamattesini/Desktop/TimerApp/cmake-build-debug/CMakeFiles/3.31.6/CMakeSystem.cmake",
+		"/Users/eliamattesini/Desktop/TimerApp 21.41.03/CMakeLists.txt",
+		"/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/CMakeFiles/3.31.6/CMakeSystem.cmake",
 		"/Users/eliamattesini/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake",
 		"/Users/eliamattesini/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/Platform/Darwin-Initialize.cmake",
-		"/Users/eliamattesini/Desktop/TimerApp/cmake-build-debug/CMakeFiles/3.31.6/CMakeCCompiler.cmake",
-		"/Users/eliamattesini/Desktop/TimerApp/cmake-build-debug/CMakeFiles/3.31.6/CMakeCXXCompiler.cmake",
+		"/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/CMakeFiles/3.31.6/CMakeCCompiler.cmake",
+		"/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/CMakeFiles/3.31.6/CMakeCXXCompiler.cmake",
 		"/Users/eliamattesini/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake",
 		"/Users/eliamattesini/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeGenericSystem.cmake",
 		"/Users/eliamattesini/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeInitializeConfigs.cmake",
@@ -351,24 +351,42 @@
 		"/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets-relwithdebinfo.cmake",
 		"/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginAdditionalTargetInfo.cmake",
 		"/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake",
-		"/Users/eliamattesini/Desktop/TimerApp/resources.qrc"
+		"/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6Test/Qt6TestConfigVersion.cmake",
+		"/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6Test/Qt6TestConfigVersionImpl.cmake",
+		"/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6Test/Qt6TestConfig.cmake",
+		"/Users/eliamattesini/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake",
+		"/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6Test/Qt6TestDependencies.cmake",
+		"/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6Test/Qt6TestTargets.cmake",
+		"/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6Test/Qt6TestTargets-relwithdebinfo.cmake",
+		"/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6Test/Qt6TestAdditionalTargetInfo.cmake",
+		"/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6TestPrivate/Qt6TestPrivateConfigVersion.cmake",
+		"/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6TestPrivate/Qt6TestPrivateConfigVersionImpl.cmake",
+		"/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6TestPrivate/Qt6TestPrivateConfig.cmake",
+		"/Users/eliamattesini/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake",
+		"/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6TestPrivate/Qt6TestPrivateDependencies.cmake",
+		"/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6TestPrivate/Qt6TestPrivateTargets.cmake",
+		"/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6TestPrivate/Qt6TestPrivateAdditionalTargetInfo.cmake",
+		"/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6TestPrivate/Qt6TestPrivateVersionlessAliasTargets.cmake",
+		"/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6Test/QtTestProperties.cmake",
+		"/Users/eliamattesini/Qt/6.10.0/macos/lib/cmake/Qt6Test/Qt6TestVersionlessAliasTargets.cmake",
+		"/Users/eliamattesini/Desktop/TimerApp 21.41.03/resources.qrc"
 	],
-	"CMAKE_SOURCE_DIR" : "/Users/eliamattesini/Desktop/TimerApp",
+	"CMAKE_SOURCE_DIR" : "/Users/eliamattesini/Desktop/TimerApp 21.41.03",
 	"CROSS_CONFIG" : false,
-	"DEP_FILE" : "/Users/eliamattesini/Desktop/TimerApp/cmake-build-debug/TimerApp_autogen/deps",
+	"DEP_FILE" : "/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/TimerApp_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "TimerApp_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"/Users/eliamattesini/Desktop/TimerApp/include/TimerWindow.h",
+			"/Users/eliamattesini/Desktop/TimerApp 21.41.03/include/TimerWindow.h",
 			"MU",
 			"6YEA5652QU/moc_TimerWindow.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/Users/eliamattesini/Desktop/TimerApp/cmake-build-debug/TimerApp_autogen/include",
-	"MOC_COMPILATION_FILE" : "/Users/eliamattesini/Desktop/TimerApp/cmake-build-debug/TimerApp_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/TimerApp_autogen/include",
+	"MOC_COMPILATION_FILE" : "/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/TimerApp_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -379,7 +397,7 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/Users/eliamattesini/Desktop/TimerApp/include",
+		"/Users/eliamattesini/Desktop/TimerApp 21.41.03/include",
 		"/Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework/Headers",
 		"/Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework",
 		"/Users/eliamattesini/Qt/6.10.0/macos/lib/QtCore.framework/Headers",
@@ -413,22 +431,22 @@
 		"-c",
 		"/Users/eliamattesini/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/Users/eliamattesini/Desktop/TimerApp/cmake-build-debug/TimerApp_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/TimerApp_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 8,
-	"PARSE_CACHE_FILE" : "/Users/eliamattesini/Desktop/TimerApp/cmake-build-debug/CMakeFiles/TimerApp_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/CMakeFiles/TimerApp_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/Users/eliamattesini/Qt/6.10.0/macos/libexec/moc",
 	"QT_UIC_EXECUTABLE" : "/Users/eliamattesini/Qt/6.10.0/macos/libexec/uic",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 10,
-	"SETTINGS_FILE" : "/Users/eliamattesini/Desktop/TimerApp/cmake-build-debug/CMakeFiles/TimerApp_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/CMakeFiles/TimerApp_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "/Users/eliamattesini/Desktop/TimerApp/main.cpp", "MU", null ],
+		[ "/Users/eliamattesini/Desktop/TimerApp 21.41.03/main.cpp", "MU", null ],
 		[
-			"/Users/eliamattesini/Desktop/TimerApp/src/TimerWindow.cpp",
+			"/Users/eliamattesini/Desktop/TimerApp 21.41.03/src/TimerWindow.cpp",
 			"MU",
 			null
 		]
