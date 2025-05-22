@@ -3,7 +3,7 @@
 #include <QtTest/QtTest>
 
 void TestTimerWindow::initTestCase() {
-    // Nessuna inizializzazione specifica per ora
+
 }
 
 void TestTimerWindow::testInitialTimeDisplay() {
@@ -13,16 +13,16 @@ void TestTimerWindow::testInitialTimeDisplay() {
 
 void TestTimerWindow::testStartTimer() {
     TimerWindow timer;
-    timer.findChild<QSpinBox*>("")->setValue(0); // Se vuoi settare ore, min o sec
+    timer.findChild<QSpinBox*>("")->setValue(0);
     timer.startTimer();
-    QVERIFY(timer.findChild<QPushButton*>("")->isEnabled() == false); // Start disabilitato
+    QVERIFY(timer.findChild<QPushButton*>("")->isEnabled() == false);
 }
 
 void TestTimerWindow::testStopTimer() {
     TimerWindow timer;
     timer.startTimer();
     timer.stopTimer();
-    QVERIFY(timer.findChild<QPushButton*>("")->isEnabled()); // Start riabilitato
+    QVERIFY(timer.findChild<QPushButton*>("")->isEnabled());
 }
 
 void TestTimerWindow::testResetTimer() {

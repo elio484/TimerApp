@@ -83,7 +83,7 @@ void TimerWindow::startTimer() {
         font.setPointSize(150);
         timeLabel->setFont(font);
         timeLabel->setText(formatTime(remainingSeconds));
-        unitLabel->setVisible(true);  // Assicura che sia visibile
+        unitLabel->setVisible(true);
 
         timer->start();
 
@@ -112,7 +112,7 @@ void TimerWindow::resetTimer() {
     timeLabel->setFont(font);
     timeLabel->setText("00:00:00");
 
-    unitLabel->setVisible(true);  // Riappare l'etichetta
+    unitLabel->setVisible(true);
     hourInput->setValue(0);
     minuteInput->setValue(0);
     secondInput->setValue(0);

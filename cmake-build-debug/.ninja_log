@@ -1,40 +1,40 @@
 # ninja log v6
-319	403	1747165767150490823	/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/TimerApp_autogen/EWIEGA46WW/qrc_resources.cpp	3e1d01783d9deed4
-11	324	1747207074171637000	/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/TimerApp_autogen/mocs_compilation.cpp	5e5493dc6c749770
-3	175	1747207143089209423	build.ninja	dfe444e7e9373857
-325	1397	1747207074187438938	CMakeFiles/TimerApp.dir/src/TimerWindow.cpp.o	ea8c381ec43e7c36
-403	429	1747165767152272982	CMakeFiles/TimerApp.dir/TimerApp_autogen/EWIEGA46WW/qrc_resources.cpp.o	4a729a29e1236955
-11	324	1747207074171637000	TimerApp_autogen/timestamp	5e5493dc6c749770
-11	324	1747207074171637000	TimerApp_autogen/mocs_compilation.cpp	5e5493dc6c749770
-319	403	1747165767150490823	TimerApp_autogen/EWIEGA46WW/qrc_resources.cpp	3e1d01783d9deed4
-11	324	1747207074171637000	/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/TimerApp_autogen/timestamp	5e5493dc6c749770
-324	1394	1747207074186011465	CMakeFiles/TimerApp.dir/TimerApp_autogen/mocs_compilation.cpp.o	745af5ef8376e9d2
-324	1393	1747207074186439970	CMakeFiles/TimerApp.dir/main.cpp.o	f4fff9c7a6db198c
-1448	1541	1747165768197045098	TimerApp	549940cc2002a775
-3	175	1747207143089209423	build.ninja	763eb9aba75ee2a3
-9	39	1747207143109035206	TimerApp_autogen/timestamp	5e5493dc6c749770
-9	39	1747207143109035206	TimerApp_autogen/mocs_compilation.cpp	5e5493dc6c749770
-9	39	1747207143109035206	/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/TimerApp_autogen/timestamp	5e5493dc6c749770
-9	39	1747207143109035206	/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/TimerApp_autogen/mocs_compilation.cpp	5e5493dc6c749770
-39	190	1747207143138779424	TimerApp	549940cc2002a775
-4	421	1747207266953298419	TimerTests_autogen/timestamp	cd086ee58d5c7f22
-4	421	1747207266953298419	TimerTests_autogen/mocs_compilation.cpp	cd086ee58d5c7f22
-4	421	1747207266953298419	/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/TimerTests_autogen/timestamp	cd086ee58d5c7f22
-4	421	1747207266953298419	/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/TimerTests_autogen/mocs_compilation.cpp	cd086ee58d5c7f22
-422	1635	1747207266966299467	CMakeFiles/TimerTests.dir/src/TimerWindow.cpp.o	7fab8aad9920a038
-421	1649	1747207266965440208	CMakeFiles/TimerTests.dir/TimerTests_autogen/mocs_compilation.cpp.o	8925e162157a6b8
-422	2143	1747207266965674586	CMakeFiles/TimerTests.dir/test/main_test.cpp.o	d998a091cbed96a3
-9	292	1747207333126377000	TimerTests_autogen/timestamp	cd086ee58d5c7f22
-9	292	1747207333126377000	TimerTests_autogen/mocs_compilation.cpp	cd086ee58d5c7f22
-9	292	1747207333126377000	/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/TimerTests_autogen/timestamp	cd086ee58d5c7f22
-9	292	1747207333126377000	/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/TimerTests_autogen/mocs_compilation.cpp	cd086ee58d5c7f22
-293	1370	1747207333137377345	CMakeFiles/TimerTests.dir/src/TimerWindow.cpp.o	7fab8aad9920a038
-292	1375	1747207333137021341	CMakeFiles/TimerTests.dir/TimerTests_autogen/mocs_compilation.cpp.o	8925e162157a6b8
-9	337	1747207398985815000	TimerTests_autogen/timestamp	cd086ee58d5c7f22
-9	337	1747207398985815000	TimerTests_autogen/mocs_compilation.cpp	cd086ee58d5c7f22
-9	337	1747207398985815000	/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/TimerTests_autogen/timestamp	cd086ee58d5c7f22
-9	337	1747207398985815000	/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/TimerTests_autogen/mocs_compilation.cpp	cd086ee58d5c7f22
-338	1225	1747207398995803264	CMakeFiles/TimerTests.dir/src/TimerWindow.cpp.o	7fab8aad9920a038
-337	1256	1747207398995555887	CMakeFiles/TimerTests.dir/TimerTests_autogen/mocs_compilation.cpp.o	8925e162157a6b8
-337	1677	1747207398995703555	CMakeFiles/TimerTests.dir/test/test_timerwindow.cpp.o	cd6eb3446c4969a7
 1677	1808	1747207400335500975	TimerTests	a1fa0003a0536e66
+323	1289	1747207471911886886	CMakeFiles/TimerApp.dir/TimerApp_autogen/mocs_compilation.cpp.o	745af5ef8376e9d2
+9	323	1747207471901386000	/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/TimerApp_autogen/timestamp	5e5493dc6c749770
+422	2143	1747207266965674586	CMakeFiles/TimerTests.dir/test/main_test.cpp.o	d998a091cbed96a3
+338	1225	1747207398995803264	CMakeFiles/TimerTests.dir/src/TimerWindow.cpp.o	7fab8aad9920a038
+9	337	1747207398985815000	/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/TimerTests_autogen/mocs_compilation.cpp	cd086ee58d5c7f22
+9	337	1747207398985815000	TimerTests_autogen/mocs_compilation.cpp	cd086ee58d5c7f22
+1308	1398	1747207472897411641	TimerApp	549940cc2002a775
+337	1677	1747207398995703555	CMakeFiles/TimerTests.dir/test/test_timerwindow.cpp.o	cd6eb3446c4969a7
+319	403	1747165767150490823	TimerApp_autogen/EWIEGA46WW/qrc_resources.cpp	3e1d01783d9deed4
+337	1256	1747207398995555887	CMakeFiles/TimerTests.dir/TimerTests_autogen/mocs_compilation.cpp.o	8925e162157a6b8
+9	323	1747207471901386000	TimerApp_autogen/mocs_compilation.cpp	5e5493dc6c749770
+323	1308	1747207471912067722	CMakeFiles/TimerApp.dir/main.cpp.o	f4fff9c7a6db198c
+9	323	1747207471901386000	TimerApp_autogen/timestamp	5e5493dc6c749770
+403	429	1747165767152272982	CMakeFiles/TimerApp.dir/TimerApp_autogen/EWIEGA46WW/qrc_resources.cpp.o	4a729a29e1236955
+323	1270	1747207471912168306	CMakeFiles/TimerApp.dir/src/TimerWindow.cpp.o	ea8c381ec43e7c36
+9	337	1747207398985815000	/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/TimerTests_autogen/timestamp	cd086ee58d5c7f22
+3	175	1747228311611085364	build.ninja	763eb9aba75ee2a3
+9	323	1747207471901386000	/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/TimerApp_autogen/mocs_compilation.cpp	5e5493dc6c749770
+9	337	1747207398985815000	TimerTests_autogen/timestamp	cd086ee58d5c7f22
+319	403	1747165767150490823	/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/TimerApp_autogen/EWIEGA46WW/qrc_resources.cpp	3e1d01783d9deed4
+6	201	1747228311611085364	build.ninja	763eb9aba75ee2a3
+6	42	1747228311636806899	TimerApp_autogen/timestamp	5e5493dc6c749770
+6	42	1747228311636806899	TimerApp_autogen/mocs_compilation.cpp	5e5493dc6c749770
+6	42	1747228311636806899	/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/TimerApp_autogen/timestamp	5e5493dc6c749770
+6	42	1747228311636806899	/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/TimerApp_autogen/mocs_compilation.cpp	5e5493dc6c749770
+10	49	1747228349794514209	TimerTests_autogen/timestamp	cd086ee58d5c7f22
+10	49	1747228349794514209	TimerTests_autogen/mocs_compilation.cpp	cd086ee58d5c7f22
+10	49	1747228349794514209	/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/TimerTests_autogen/timestamp	cd086ee58d5c7f22
+10	49	1747228349794514209	/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/TimerTests_autogen/mocs_compilation.cpp	cd086ee58d5c7f22
+50	1458	1747228349834305710	CMakeFiles/TimerTests.dir/test/test_timerwindow.cpp.o	cd6eb3446c4969a7
+1458	1587	1747228351242533346	TimerTests	a1fa0003a0536e66
+9	45	1747757427898618408	TimerTests_autogen/timestamp	cd086ee58d5c7f22
+9	45	1747757427898618408	TimerTests_autogen/mocs_compilation.cpp	cd086ee58d5c7f22
+9	45	1747757427898618408	/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/TimerTests_autogen/timestamp	cd086ee58d5c7f22
+9	45	1747757427898618408	/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug/TimerTests_autogen/mocs_compilation.cpp	cd086ee58d5c7f22
+46	1095	1747757427935747819	CMakeFiles/TimerTests.dir/src/TimerWindow.cpp.o	7fab8aad9920a038
+46	1509	1747757427935536611	CMakeFiles/TimerTests.dir/test/test_timerwindow.cpp.o	cd6eb3446c4969a7
+1509	1654	1747757429398534756	TimerTests	a1fa0003a0536e66
