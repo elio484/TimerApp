@@ -7,7 +7,8 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-set(CMAKE_PREFIX_PATH "/Users/eliamattesini/Qt/6.10.0/macos")
+set(QT_PATH "/Users/eliamattesini/Qt/6.10.0/macos")
+set(CMAKE_PREFIX_PATH ${QT_PATH})
 
 find_package(Qt6 REQUIRED COMPONENTS Widgets Test)
 
