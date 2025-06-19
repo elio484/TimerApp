@@ -2,22 +2,29 @@
 #define TIMER_H
 
 #include <QObject>
+#include <QTimer>
 
-class Timer : public QObject {
+class Timer : public QObject
+{
     Q_OBJECT
-
-private:
-    int totalSeconds;
 
 public:
     explicit Timer(QObject *parent = nullptr);
 
-    void setTime(int seconds);
-    void reset();
-    bool tick();  // Ritorna true se il timer è arrivato a zero
-    QString formatTime(int totalSeconds) const;
+    void start(int seconds);
+    void stop();
+    int getRemainingTime() const;
 
-    int getTotalSeconds() const;
+    signals:
+        void timeChanged(int secondsLeft);
+    void timeout();
+
+private slots:
+    void updateTimer();
+
+private:
+    QTimer m_timer;
+    int m_remainingSeconds;
 };
 
 #endif // TIMER_H

@@ -1,5 +1,4 @@
 #include "TimerWindow.h"
-#include <QHBoxLayout>
 #include <QVBoxLayout>
 #include <QFont>
 
@@ -11,7 +10,8 @@ TimerWindow::TimerWindow(QWidget *parent)
       hourSpinBox(new QSpinBox(this)),
       minuteSpinBox(new QSpinBox(this)),
       secondSpinBox(new QSpinBox(this)),
-      qtimer(new QTimer(this))
+      qtimer(new QTimer(this)),
+      totalSeconds(0)
 {
     unitLabel = new QLabel("h              min              sec", this);
     unitLabel->setAlignment(Qt::AlignCenter);
@@ -29,15 +29,18 @@ TimerWindow::TimerWindow(QWidget *parent)
     timeLabel->setMaximumHeight(100);
     timeLabel->setWordWrap(true);
 
-    // Imposta range e valori iniziali
+    // Imposta range e valori iniziali e objectName (importante per i test)
     hourSpinBox->setRange(0, 23);
     hourSpinBox->setValue(0);
+    hourSpinBox->setObjectName("hourBox");
 
     minuteSpinBox->setRange(0, 59);
     minuteSpinBox->setValue(0);
+    minuteSpinBox->setObjectName("minuteBox");
 
     secondSpinBox->setRange(0, 59);
     secondSpinBox->setValue(0);
+    secondSpinBox->setObjectName("secondBox");
 
     // Layout orizzontale per spinbox e pulsanti
     QHBoxLayout *hLayout = new QHBoxLayout;

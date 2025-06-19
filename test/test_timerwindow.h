@@ -9,9 +9,6 @@ class TestTimerWindow : public QObject {
 private slots:
     void initTestCase();
     void testInitialTimeDisplay();
-    void testStartTimer();
-    void testStopTimer();
-    void testResetTimer();
     void testFormatTime();
 };
 

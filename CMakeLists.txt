@@ -14,23 +14,32 @@ find_package(Qt6 REQUIRED COMPONENTS Widgets Test)
 
 include_directories(include)
 
-
 add_executable(TimerApp
         main.cpp
-        include/TimerWindow.h
+        src/Timer.cpp
         src/TimerWindow.cpp
+        include/Timer.h
+        include/TimerWindow.h
         resources.qrc
 )
 
-target_link_libraries(TimerApp Qt6::Widgets)
-
+target_link_libraries(TimerApp
+        Qt6::Widgets
+)
 
 add_executable(TimerTests
         test/main_test.cpp
+        test/test_timer.cpp
         test/test_timerwindow.cpp
-        test/test_timerwindow.h
+        src/Timer.cpp
         src/TimerWindow.cpp
+        include/Timer.h
         include/TimerWindow.h
+        test/test_timer.h
+        test/test_timerwindow.h
 )
 
-target_link_libraries(TimerTests Qt6::Test Qt6::Widgets)
+target_link_libraries(TimerTests
+        Qt6::Test
+        Qt6::Widgets
+)

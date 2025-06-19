@@ -21,7 +21,7 @@ public:
 private slots:
     void updateDisplay();
 
-private:
+public:
     QLabel *unitLabel;
     QLabel *timeLabel;
     QPushButton *startButton;
