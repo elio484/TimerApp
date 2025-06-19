@@ -20,16 +20,6 @@ bool Timer::tick() {
     return false;
 }
 
-QString Timer::formatTime(int seconds) const {
-    int h = seconds / 3600;
-    int m = (seconds % 3600) / 60;
-    int s = seconds % 60;
-    return QString("%1:%2:%3")
-        .arg(h, 2, 10, QChar('0'))
-        .arg(m, 2, 10, QChar('0'))
-        .arg(s, 2, 10, QChar('0'));
-}
-
 int Timer::getTotalSeconds() const {
     return totalSeconds;
 }
