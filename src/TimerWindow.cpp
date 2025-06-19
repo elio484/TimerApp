@@ -3,24 +3,20 @@
 #include <QHBoxLayout>
 #include <QFont>
 
-TimerWindow::TimerWindow(QWidget *parent) : QWidget(parent), remainingSeconds(0) {
-    timer = new QTimer(this);
-    timer->setInterval(1000);
-    connect(timer, &QTimer::timeout, this, &TimerWindow::updateDisplay);
+TimerWindow::TimerWindow(QWidget *parent) : QWidget(parent) {
+    qtimer = new QTimer(this);
+    qtimer->setInterval(1000);
+    connect(qtimer, &QTimer::timeout, this, &TimerWindow::updateDisplay);
     setupUI();
 }
 
 void TimerWindow::setupUI() {
-
     unitLabel = new QLabel("h              min              sec", this);
     unitLabel->setAlignment(Qt::AlignCenter);
     QFont unitFont;
     unitFont.setPointSize(40);
     unitLabel->setFont(unitFont);
-
     unitLabel->setContentsMargins(0, 100, 0, 0);
-
-
 
     timeLabel = new QLabel("00:00:00", this);
     timeLabel->setObjectName("timeLabel");
@@ -71,21 +67,21 @@ void TimerWindow::setupUI() {
 }
 
 void TimerWindow::startTimer() {
-    if (!timer->isActive()) {
-        if (remainingSeconds == 0) {
+    if (!qtimer->isActive()) {
+        if (timerLogic.getRemainingSeconds() == 0) {
             int hours = hourInput->value();
             int minutes = minuteInput->value();
             int seconds = secondInput->value();
-            remainingSeconds = hours * 3600 + minutes * 60 + seconds;
+            timerLogic.setTime(hours, minutes, seconds);
         }
 
         QFont font = timeLabel->font();
         font.setPointSize(150);
         timeLabel->setFont(font);
-        timeLabel->setText(formatTime(remainingSeconds));
+        timeLabel->setText(timerLogic.formatTime());
         unitLabel->setVisible(true);
 
-        timer->start();
+        qtimer->start();
 
         hourInput->setEnabled(false);
         minuteInput->setEnabled(false);
@@ -95,7 +91,7 @@ void TimerWindow::startTimer() {
 }
 
 void TimerWindow::stopTimer() {
-    timer->stop();
+    qtimer->stop();
 
     hourInput->setEnabled(true);
     minuteInput->setEnabled(true);
@@ -104,8 +100,8 @@ void TimerWindow::stopTimer() {
 }
 
 void TimerWindow::resetTimer() {
-    timer->stop();
-    remainingSeconds = 0;
+    qtimer->stop();
+    timerLogic.reset();
 
     QFont font = timeLabel->font();
     font.setPointSize(150);
@@ -124,11 +120,10 @@ void TimerWindow::resetTimer() {
 }
 
 void TimerWindow::updateDisplay() {
-    if (remainingSeconds > 0) {
-        remainingSeconds--;
-        timeLabel->setText(formatTime(remainingSeconds));
+    if (timerLogic.tick()) {
+        timeLabel->setText(timerLogic.formatTime());
     } else {
-        timer->stop();
+        qtimer->stop();
 
         QFont smallFont = timeLabel->font();
         smallFont.setPointSize(50);
@@ -142,15 +137,4 @@ void TimerWindow::updateDisplay() {
         secondInput->setEnabled(true);
         startButton->setEnabled(true);
     }
-}
-
-QString TimerWindow::formatTime(int totalSeconds) const {
-    int hours = totalSeconds / 3600;
-    int minutes = (totalSeconds % 3600) / 60;
-    int seconds = totalSeconds % 60;
-
-    return QString("%1:%2:%3")
-        .arg(hours, 2, 10, QLatin1Char('0'))
-        .arg(minutes, 2, 10, QLatin1Char('0'))
-        .arg(seconds, 2, 10, QLatin1Char('0'));
 }
