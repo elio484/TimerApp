@@ -2,37 +2,39 @@
 #define TIMERWINDOW_H
 
 #include <QWidget>
-#include <QTimer>
 #include <QLabel>
 #include <QPushButton>
 #include <QSpinBox>
-#include "Timer.h"  // Inclusione della nuova classe Timer
+#include <QTimer>
 
 class TimerWindow : public QWidget {
     Q_OBJECT
 
 public:
     explicit TimerWindow(QWidget *parent = nullptr);
-    void setupUI();
 
-public slots:
     void startTimer();
     void stopTimer();
     void resetTimer();
+    QString formatTime(int seconds);
+
+private slots:
     void updateDisplay();
 
 private:
-    QLabel *timeLabel;
     QLabel *unitLabel;
-    QSpinBox *hourInput;
-    QSpinBox *minuteInput;
-    QSpinBox *secondInput;
+    QLabel *timeLabel;
     QPushButton *startButton;
     QPushButton *stopButton;
     QPushButton *resetButton;
 
+    QSpinBox *hourSpinBox;
+    QSpinBox *minuteSpinBox;
+    QSpinBox *secondSpinBox;
+
     QTimer *qtimer;
-    Timer timerLogic;  // Nuova istanza della logica di timer
+
+    int totalSeconds = 0;
 };
 
 #endif // TIMERWINDOW_H

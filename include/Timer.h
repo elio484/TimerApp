@@ -1,20 +1,23 @@
 #ifndef TIMER_H
 #define TIMER_H
 
-#include <QString>
+#include <QObject>
 
-class Timer {
-public:
-    Timer();
-
-    void setTime(int hours, int minutes, int seconds);
-    QString formatTime() const;
-    bool tick(); // Decrementa il tempo e ritorna true se il timer continua, false se è finito
-    void reset();
-    int getRemainingSeconds() const;
+class Timer : public QObject {
+    Q_OBJECT
 
 private:
-    int remainingSeconds;
+    int totalSeconds;
+
+public:
+    explicit Timer(QObject *parent = nullptr);
+
+    void setTime(int seconds);
+    void reset();
+    bool tick();  // Ritorna true se il timer è arrivato a zero
+    QString formatTime(int totalSeconds) const;
+
+    int getTotalSeconds() const;
 };
 
 #endif // TIMER_H

@@ -1,37 +1,35 @@
 #include "Timer.h"
 #include <QString>
-#include <iomanip>
-#include <sstream>
 
-Timer::Timer() : remainingSeconds(0) {}
+Timer::Timer(QObject *parent)
+    : QObject(parent), totalSeconds(0) {}
 
-void Timer::setTime(int hours, int minutes, int seconds) {
-    remainingSeconds = hours * 3600 + minutes * 60 + seconds;
+void Timer::setTime(int seconds) {
+    totalSeconds = seconds;
 }
 
-QString Timer::formatTime() const {
-    int hours = remainingSeconds / 3600;
-    int minutes = (remainingSeconds % 3600) / 60;
-    int seconds = remainingSeconds % 60;
-
-    return QString("%1:%2:%3")
-        .arg(hours, 2, 10, QChar('0'))
-        .arg(minutes, 2, 10, QChar('0'))
-        .arg(seconds, 2, 10, QChar('0'));
+void Timer::reset() {
+    totalSeconds = 0;
 }
 
 bool Timer::tick() {
-    if (remainingSeconds > 0) {
-        --remainingSeconds;
+    if (totalSeconds > 0) {
+        --totalSeconds;
         return true;
     }
     return false;
 }
 
-void Timer::reset() {
-    remainingSeconds = 0;
+QString Timer::formatTime(int seconds) const {
+    int h = seconds / 3600;
+    int m = (seconds % 3600) / 60;
+    int s = seconds % 60;
+    return QString("%1:%2:%3")
+        .arg(h, 2, 10, QChar('0'))
+        .arg(m, 2, 10, QChar('0'))
+        .arg(s, 2, 10, QChar('0'));
 }
 
-int Timer::getRemainingSeconds() const {
-    return remainingSeconds;
+int Timer::getTotalSeconds() const {
+    return totalSeconds;
 }

@@ -1,16 +1,18 @@
 #include "TimerWindow.h"
-#include <QVBoxLayout>
 #include <QHBoxLayout>
+#include <QVBoxLayout>
 #include <QFont>
 
-TimerWindow::TimerWindow(QWidget *parent) : QWidget(parent) {
-    qtimer = new QTimer(this);
-    qtimer->setInterval(1000);
-    connect(qtimer, &QTimer::timeout, this, &TimerWindow::updateDisplay);
-    setupUI();
-}
-
-void TimerWindow::setupUI() {
+TimerWindow::TimerWindow(QWidget *parent)
+    : QWidget(parent),
+      startButton(new QPushButton("Start", this)),
+      stopButton(new QPushButton("Stop", this)),
+      resetButton(new QPushButton("Reset", this)),
+      hourSpinBox(new QSpinBox(this)),
+      minuteSpinBox(new QSpinBox(this)),
+      secondSpinBox(new QSpinBox(this)),
+      qtimer(new QTimer(this))
+{
     unitLabel = new QLabel("h              min              sec", this);
     unitLabel->setAlignment(Qt::AlignCenter);
     QFont unitFont;
@@ -27,114 +29,110 @@ void TimerWindow::setupUI() {
     timeLabel->setMaximumHeight(100);
     timeLabel->setWordWrap(true);
 
-    hourInput = new QSpinBox(this);
-    hourInput->setRange(0, 23);
-    hourInput->setPrefix("Ore: ");
+    // Imposta range e valori iniziali
+    hourSpinBox->setRange(0, 23);
+    hourSpinBox->setValue(0);
 
-    minuteInput = new QSpinBox(this);
-    minuteInput->setRange(0, 59);
-    minuteInput->setPrefix("Min: ");
+    minuteSpinBox->setRange(0, 59);
+    minuteSpinBox->setValue(0);
 
-    secondInput = new QSpinBox(this);
-    secondInput->setRange(0, 59);
-    secondInput->setPrefix("Sec: ");
+    secondSpinBox->setRange(0, 59);
+    secondSpinBox->setValue(0);
 
-    QHBoxLayout *inputLayout = new QHBoxLayout();
-    inputLayout->addWidget(hourInput);
-    inputLayout->addWidget(minuteInput);
-    inputLayout->addWidget(secondInput);
+    // Layout orizzontale per spinbox e pulsanti
+    QHBoxLayout *hLayout = new QHBoxLayout;
+    hLayout->addWidget(hourSpinBox);
+    hLayout->addWidget(minuteSpinBox);
+    hLayout->addWidget(secondSpinBox);
+    hLayout->addWidget(startButton);
+    hLayout->addWidget(stopButton);
+    hLayout->addWidget(resetButton);
 
-    startButton = new QPushButton("Start", this);
-    stopButton = new QPushButton("Stop", this);
-    resetButton = new QPushButton("Reset", this);
-
-    QHBoxLayout *buttonLayout = new QHBoxLayout();
-    buttonLayout->addWidget(startButton);
-    buttonLayout->addWidget(stopButton);
-    buttonLayout->addWidget(resetButton);
-
-    QVBoxLayout *mainLayout = new QVBoxLayout(this);
-    mainLayout->addWidget(unitLabel);
-    mainLayout->addWidget(timeLabel);
-    mainLayout->addLayout(inputLayout);
-    mainLayout->addLayout(buttonLayout);
-    mainLayout->setSpacing(20);
-    mainLayout->setContentsMargins(40, 40, 40, 40);
+    QVBoxLayout *vLayout = new QVBoxLayout(this);
+    vLayout->addWidget(unitLabel);
+    vLayout->addWidget(timeLabel);
+    vLayout->addLayout(hLayout);
 
     connect(startButton, &QPushButton::clicked, this, &TimerWindow::startTimer);
     connect(stopButton, &QPushButton::clicked, this, &TimerWindow::stopTimer);
     connect(resetButton, &QPushButton::clicked, this, &TimerWindow::resetTimer);
+    connect(qtimer, &QTimer::timeout, this, &TimerWindow::updateDisplay);
+
+    stopButton->setEnabled(false);
+    resetButton->setEnabled(false);
 }
 
-void TimerWindow::startTimer() {
-    if (!qtimer->isActive()) {
-        if (timerLogic.getRemainingSeconds() == 0) {
-            int hours = hourInput->value();
-            int minutes = minuteInput->value();
-            int seconds = secondInput->value();
-            timerLogic.setTime(hours, minutes, seconds);
-        }
+void TimerWindow::startTimer()
+{
+    totalSeconds = hourSpinBox->value() * 3600
+                 + minuteSpinBox->value() * 60
+                 + secondSpinBox->value();
 
-        QFont font = timeLabel->font();
-        font.setPointSize(150);
-        timeLabel->setFont(font);
-        timeLabel->setText(timerLogic.formatTime());
-        unitLabel->setVisible(true);
+    if (totalSeconds <= 0)
+        return;
 
-        qtimer->start();
+    hourSpinBox->setEnabled(false);
+    minuteSpinBox->setEnabled(false);
+    secondSpinBox->setEnabled(false);
 
-        hourInput->setEnabled(false);
-        minuteInput->setEnabled(false);
-        secondInput->setEnabled(false);
-        startButton->setEnabled(false);
-    }
+    startButton->setEnabled(false);
+    stopButton->setEnabled(true);
+    resetButton->setEnabled(true);
+
+    qtimer->start(1000); // ogni secondo
+    updateDisplay();
 }
 
-void TimerWindow::stopTimer() {
+void TimerWindow::stopTimer()
+{
     qtimer->stop();
 
-    hourInput->setEnabled(true);
-    minuteInput->setEnabled(true);
-    secondInput->setEnabled(true);
     startButton->setEnabled(true);
+    stopButton->setEnabled(false);
+
+    hourSpinBox->setEnabled(true);
+    minuteSpinBox->setEnabled(true);
+    secondSpinBox->setEnabled(true);
 }
 
-void TimerWindow::resetTimer() {
+void TimerWindow::resetTimer()
+{
     qtimer->stop();
-    timerLogic.reset();
-
-    QFont font = timeLabel->font();
-    font.setPointSize(150);
-    timeLabel->setFont(font);
+    totalSeconds = 0;
     timeLabel->setText("00:00:00");
 
-    unitLabel->setVisible(true);
-    hourInput->setValue(0);
-    minuteInput->setValue(0);
-    secondInput->setValue(0);
+    hourSpinBox->setValue(0);
+    minuteSpinBox->setValue(0);
+    secondSpinBox->setValue(0);
 
-    hourInput->setEnabled(true);
-    minuteInput->setEnabled(true);
-    secondInput->setEnabled(true);
+    hourSpinBox->setEnabled(true);
+    minuteSpinBox->setEnabled(true);
+    secondSpinBox->setEnabled(true);
+
     startButton->setEnabled(true);
+    stopButton->setEnabled(false);
+    resetButton->setEnabled(false);
 }
 
-void TimerWindow::updateDisplay() {
-    if (timerLogic.tick()) {
-        timeLabel->setText(timerLogic.formatTime());
-    } else {
-        qtimer->stop();
-
-        QFont smallFont = timeLabel->font();
-        smallFont.setPointSize(50);
-        timeLabel->setFont(smallFont);
-        timeLabel->setText("Tempo scaduto!");
-
-        unitLabel->setVisible(false);
-
-        hourInput->setEnabled(true);
-        minuteInput->setEnabled(true);
-        secondInput->setEnabled(true);
-        startButton->setEnabled(true);
+void TimerWindow::updateDisplay()
+{
+    if (totalSeconds <= 0) {
+        stopTimer();
+        return;
     }
+
+    timeLabel->setText(formatTime(totalSeconds));
+    totalSeconds--;
+}
+
+QString TimerWindow::formatTime(int seconds)
+{
+    int h = seconds / 3600;
+    int m = (seconds % 3600) / 60;
+    int s = seconds % 60;
+
+    return QString("%1:%2:%3")
+        .arg(h, 2, 10, QChar('0'))
+        .arg(m, 2, 10, QChar('0'))
+        .arg(s, 2, 10, QChar('0'));
 }
