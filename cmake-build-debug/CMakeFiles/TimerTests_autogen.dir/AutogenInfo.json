@@ -378,9 +378,21 @@
 	"HEADERS" : 
 	[
 		[
+			"/Users/eliamattesini/Desktop/TimerApp 21.41.03/include/Timer.h",
+			"MU",
+			"6YEA5652QU/moc_Timer.cpp",
+			null
+		],
+		[
 			"/Users/eliamattesini/Desktop/TimerApp 21.41.03/include/TimerWindow.h",
 			"MU",
 			"6YEA5652QU/moc_TimerWindow.cpp",
+			null
+		],
+		[
+			"/Users/eliamattesini/Desktop/TimerApp 21.41.03/test/test_timer.h",
+			"MU",
+			"7HEK2XT3N7/moc_test_timer.cpp",
 			null
 		],
 		[
@@ -465,12 +477,22 @@
 	"SOURCES" : 
 	[
 		[
+			"/Users/eliamattesini/Desktop/TimerApp 21.41.03/src/Timer.cpp",
+			"MU",
+			null
+		],
+		[
 			"/Users/eliamattesini/Desktop/TimerApp 21.41.03/src/TimerWindow.cpp",
 			"MU",
 			null
 		],
 		[
 			"/Users/eliamattesini/Desktop/TimerApp 21.41.03/test/main_test.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/eliamattesini/Desktop/TimerApp 21.41.03/test/test_timer.cpp",
 			"MU",
 			null
 		],

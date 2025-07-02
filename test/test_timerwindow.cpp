@@ -13,13 +13,13 @@ void TestTimerWindow::initTestCase() {
 void TestTimerWindow::testInitialTimeDisplay() {
     TimerWindow timer;
     QLabel* label = timer.findChild<QLabel*>("timeLabel");
-    QVERIFY(label);
-    QCOMPARE(label->text(), QString("00:00:00"));
+    QVERIFY(label); //Verifica che il puntatore a QLabel non sia nullo.
+    QCOMPARE(label->text(), QString("00:00:00")); //Verifica che all’avvio il testo del QLabel sia "00:00:00".
 }
 
 // Verifica il formato dell'orario
 void TestTimerWindow::testFormatTime() {
     TimerWindow timer;
-    QString result = timer.formatTime(3661); // 1h 1min 1sec
+    QString result = timer.formatTime(3661); // Chiama formatTime(3661): cioè chiede di formattare 3661 secondi.
     QCOMPARE(result, QString("01:01:01"));
 }

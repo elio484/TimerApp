@@ -40,22 +40,13 @@ template <> constexpr inline auto TimerWindow::qt_create_metaobjectdata<qt_meta_
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
         "TimerWindow",
-        "startTimer",
-        "",
-        "stopTimer",
-        "resetTimer",
-        "updateDisplay"
+        "updateDisplay",
+        ""
     };
 
     QtMocHelpers::UintData qt_methods {
-        // Slot 'startTimer'
-        QtMocHelpers::SlotData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
-        // Slot 'stopTimer'
-        QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPublic, QMetaType::Void),
-        // Slot 'resetTimer'
-        QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPublic, QMetaType::Void),
         // Slot 'updateDisplay'
-        QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPublic, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(1, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -79,10 +70,7 @@ void TimerWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
     auto *_t = static_cast<TimerWindow *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->startTimer(); break;
-        case 1: _t->stopTimer(); break;
-        case 2: _t->resetTimer(); break;
-        case 3: _t->updateDisplay(); break;
+        case 0: _t->updateDisplay(); break;
         default: ;
         }
     }
@@ -108,14 +96,14 @@ int TimerWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 1)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 1;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 1)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 4;
+        _id -= 1;
     }
     return _id;
 }

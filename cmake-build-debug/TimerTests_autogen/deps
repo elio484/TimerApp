@@ -977,10 +977,14 @@ TimerTests_autogen/timestamp: \
 	/Users/eliamattesini/Desktop/TimerApp\ 21.41.03/cmake-build-debug/CMakeFiles/3.31.6/CMakeCXXCompiler.cmake \
 	/Users/eliamattesini/Desktop/TimerApp\ 21.41.03/cmake-build-debug/CMakeFiles/3.31.6/CMakeSystem.cmake \
 	/Users/eliamattesini/Desktop/TimerApp\ 21.41.03/cmake-build-debug/TimerTests_autogen/moc_predefs.h \
+	/Users/eliamattesini/Desktop/TimerApp\ 21.41.03/include/Timer.h \
 	/Users/eliamattesini/Desktop/TimerApp\ 21.41.03/include/TimerWindow.h \
 	/Users/eliamattesini/Desktop/TimerApp\ 21.41.03/resources.qrc \
+	/Users/eliamattesini/Desktop/TimerApp\ 21.41.03/src/Timer.cpp \
 	/Users/eliamattesini/Desktop/TimerApp\ 21.41.03/src/TimerWindow.cpp \
 	/Users/eliamattesini/Desktop/TimerApp\ 21.41.03/test/main_test.cpp \
+	/Users/eliamattesini/Desktop/TimerApp\ 21.41.03/test/test_timer.cpp \
+	/Users/eliamattesini/Desktop/TimerApp\ 21.41.03/test/test_timer.h \
 	/Users/eliamattesini/Desktop/TimerApp\ 21.41.03/test/test_timerwindow.cpp \
 	/Users/eliamattesini/Desktop/TimerApp\ 21.41.03/test/test_timerwindow.h \
 	/Users/eliamattesini/Qt/6.10.0/macos/lib/QtCore.framework/Versions/A/Headers/QObject \
@@ -1150,6 +1154,7 @@ TimerTests_autogen/timestamp: \
 	/Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QLabel \
 	/Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QPushButton \
 	/Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QSpinBox \
+	/Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QWidget \
 	/Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qabstractbutton.h \
 	/Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qabstractspinbox.h \
 	/Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qframe.h \

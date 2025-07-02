@@ -24,10 +24,13 @@ private slots:
 public:
     QLabel *unitLabel;
     QLabel *timeLabel;
+
+    //Pulsanti per controllare il timer (start, stop, reset).
     QPushButton *startButton;
     QPushButton *stopButton;
     QPushButton *resetButton;
 
+    //Tre QSpinBox per impostare ore, minuti e secondi.
     QSpinBox *hourSpinBox;
     QSpinBox *minuteSpinBox;
     QSpinBox *secondSpinBox;

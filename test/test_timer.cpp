@@ -9,21 +9,21 @@ void TestTimer::initTestCase() {
 // Verifica che dopo start() il tempo rimanente sia corretto
 void TestTimer::testStart() {
     Timer timer;
-    timer.start(5);
-    QCOMPARE(timer.getRemainingTime(), 5);
+    timer.start(5); //parte ogni 5 secondi
+    QCOMPARE(timer.getRemainingTime(), 5); //controlla che restituisce 5
 }
 
 // Verifica che il countdown diminuisca ogni secondo
 void TestTimer::testCountdown() {
     Timer timer;
-    QSignalSpy spy(&timer, &Timer::timeChanged);
+    QSignalSpy spy(&timer, &Timer::timeChanged); //osserva quante volte viene emesso il segnale
 
     timer.start(3);
 
-    QTest::qWait(3100); // attendi 3.1 secondi per il conteggio
+    QTest::qWait(3100);
 
-    QCOMPARE(timer.getRemainingTime(), 0);
-    QVERIFY(spy.count() >= 3);
+    QCOMPARE(timer.getRemainingTime(), 0); //verifica che il tempo rimante sia arrivato a zero
+    QVERIFY(spy.count() >= 3); //deve aver emesso almeno 3 timechange()
 }
 
 // Verifica che stop() fermi il timer
@@ -39,10 +39,10 @@ void TestTimer::testStop() {
 // Verifica che venga emesso il segnale timeout()
 void TestTimer::testTimeoutSignal() {
     Timer timer;
-    QSignalSpy timeoutSpy(&timer, &Timer::timeout);
+    QSignalSpy timeoutSpy(&timer, &Timer::timeout); //osserva il segnale timeout() del timer, tiene traccia
 
     timer.start(1);
     QTest::qWait(1500); // attendi che scatti timeout
 
-    QCOMPARE(timeoutSpy.count(), 1);
+    QCOMPARE(timeoutSpy.count(), 1); //controlla quante volte è stato emesso timeout, restituisce segnale emesso
 }

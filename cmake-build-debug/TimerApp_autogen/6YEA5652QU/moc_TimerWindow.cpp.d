@@ -1093,6 +1093,7 @@
   /Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QLabel \
   /Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QPushButton \
   /Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QSpinBox \
+  /Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QWidget \
   /Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qabstractbutton.h \
   /Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qabstractspinbox.h \
   /Users/eliamattesini/Qt/6.10.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qframe.h \
