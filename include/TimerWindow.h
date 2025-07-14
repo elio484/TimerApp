@@ -8,10 +8,10 @@
 #include <QTimer>
 
 class TimerWindow : public QWidget {
-    Q_OBJECT
+    Q_OBJECT //è una macro necessaria per abilitare segnali e slots
 
 public:
-    explicit TimerWindow(QWidget *parent = nullptr);
+    explicit TimerWindow(QWidget *parent = nullptr); //serve per collegare il widget ad un eventuale genitore.
 
     void startTimer();
     void stopTimer();
@@ -19,7 +19,7 @@ public:
     QString formatTime(int seconds);
 
 private slots:
-    void updateDisplay();
+    void updateDisplay(); //è uno slot, quindi può essere collegato ai segnali Qt
 
 public:
     QLabel *unitLabel;

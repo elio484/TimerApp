@@ -1,0 +1,105 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "TimerApp",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "TimerApp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TimerApp-Debug-8f8d92387dcf45872594.json",
+					"name" : "TimerApp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "TimerApp_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TimerApp_autogen-Debug-cdfd6b6c70bf80978777.json",
+					"name" : "TimerApp_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "TimerApp_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TimerApp_autogen_timestamp_deps-Debug-54f53742ea1cd5d9625b.json",
+					"name" : "TimerApp_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "TimerTests::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TimerTests-Debug-643143f1463c43a5579a.json",
+					"name" : "TimerTests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "TimerTests_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TimerTests_autogen-Debug-df3ee40dd86855ce9781.json",
+					"name" : "TimerTests_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "TimerTests_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TimerTests_autogen_timestamp_deps-Debug-6178a4fe963552eb6ebd.json",
+					"name" : "TimerTests_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/eliamattesini/Desktop/TimerApp 21.41.03/cmake-build-debug",
+		"source" : "/Users/eliamattesini/Desktop/TimerApp 21.41.03"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

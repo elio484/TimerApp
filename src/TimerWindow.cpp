@@ -56,10 +56,10 @@ TimerWindow::TimerWindow(QWidget *parent)
     vLayout->addWidget(timeLabel);
     vLayout->addLayout(hLayout);
 
-    connect(startButton, &QPushButton::clicked, this, &TimerWindow::startTimer);
+    connect(startButton, &QPushButton::clicked, this, &TimerWindow::startTimer);//collega un segnale(evento) allo slots(funzione che risponde a un segnale) usando la funzione connect
     connect(stopButton, &QPushButton::clicked, this, &TimerWindow::stopTimer);
     connect(resetButton, &QPushButton::clicked, this, &TimerWindow::resetTimer);
-    connect(qtimer, &QTimer::timeout, this, &TimerWindow::updateDisplay);
+    connect(qtimer, &QTimer::timeout, this, &TimerWindow::updateDisplay);//viene emesso ogni volta che scade l’intervallo del timer
 
     stopButton->setEnabled(false);
     resetButton->setEnabled(false);
